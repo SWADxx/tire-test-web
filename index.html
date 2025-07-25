@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tire Test Logger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Smart Tire Testing Log</h1>
+    <form id="tireForm" onsubmit="submitForm(event)">
+      <label>Date <input type="date" id="date" required /></label>
+      <label>Tire Size <input type="text" id="tire_size" required /></label>
+      <label>Brand Name
+        <select id="brand_name" required>
+          <option value="">Loading...</option>
+        </select>
+      </label>
+      <label>Load Index <input type="text" id="load_index" /></label>
+      <label>Serial Number <input type="text" id="serial_number" /></label>
+      <label>Test Type
+        <select id="test_type" required>
+          <option value="">Select</option>
+          <option>Dimension Test</option>
+          <option>Endurance Test</option>
+          <option>Burst Test</option>
+          <option>Plunger Test</option>
+          <option>Photo Test</option>
+          <option>BM Test</option>
+          <option>Cut Section</option>
+        </select>
+      </label>
+      <label>Test Description
+        <textarea id="test_description" rows="3"></textarea>
+      </label>
+      <button type="submit">✅ Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
