@@ -1,4 +1,4 @@
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbykYeDUywRdXY_nUCFfv0QDEfEca0gY-nVTuQ4QATducaHV3XNSN-ehcjMqhy9Zld0/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyNx1aYjstoI1cInq709w5KUBuBBf2I7Wr3tQdhd5HUMM0vWweDxP-M99jjibtJtOkx/exec";
 
 window.onload = function () {
   loadBrandNames();
