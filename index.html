@@ -2,41 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tire Test Logger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Tire Test Logger</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>🚀 Smart Tire Testing Log</h1>
-    <form id="tireForm" onsubmit="submitForm(event)">
-      <label>Date <input type="date" id="date" required /></label>
-      <label>Tire Size <input type="text" id="tire_size" required /></label>
-      <label>Brand Name
-        <select id="brand_name" required>
-          <option value="">Loading...</option>
-        </select>
-      </label>
-      <label>Load Index <input type="text" id="load_index" /></label>
-      <label>Serial Number <input type="text" id="serial_number" /></label>
-      <label>Test Type
-        <select id="test_type" required>
-          <option value="">Select</option>
-          <option>Dimension Test</option>
-          <option>Endurance Test</option>
-          <option>Burst Test</option>
-          <option>Plunger Test</option>
-          <option>Photo Test</option>
-          <option>BM Test</option>
-          <option>Cut Section</option>
-        </select>
-      </label>
-      <label>Test Description
-        <textarea id="test_description" rows="3"></textarea>
-      </label>
-      <button type="submit">✅ Submit</button>
+    <h1>🛞 Smart Tire Testing Lab</h1>
+    <form id="tireForm">
+      <label for="date">📅 Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="tire_size">🔩 Tire Size:</label>
+      <input type="text" id="tire_size" name="tire_size" placeholder="e.g. 600/70R30" required />
+
+      <label for="brand_name">🏷️ Brand Name:</label>
+      <select id="brand_name" name="brand_name" required>
+        <option value="">-- Loading... --</option>
+      </select>
+
+      <label for="load_index">⚖️ Load Index:</label>
+      <input type="text" id="load_index" name="load_index" required />
+
+      <label for="serial_number">🔢 Serial Number:</label>
+      <input type="text" id="serial_number" name="serial_number" required />
+
+      <label for="test_type">🧪 Test Type:</label>
+      <select id="test_type" name="test_type" required>
+        <option value="">-- Select Test --</option>
+        <option value="Dimension Test">Dimension Test</option>
+        <option value="Endurance Test">Endurance Test</option>
+        <option value="Burst Test">Burst Test</option>
+        <option value="Plunger Test">Plunger Test</option>
+        <option value="Photo Test">Photo Test</option>
+        <option value="BM Test">BM Test</option>
+        <option value="Cut Section">Cut Section</option>
+      </select>
+
+      <label for="test_description">📝 Test Description:</label>
+      <textarea id="test_description" name="test_description" rows="3" required></textarea>
+
+      <button type="submit">🚀 Submit</button>
     </form>
+    <footer>
+      <p>🔧 Smart Tire Logger v1.0 | © 2025</p>
+    </footer>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
